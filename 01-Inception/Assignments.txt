@@ -11,3 +11,5 @@ One for React and other is for its DOM because React not only works on Web But a
 Why React is a library??
 Because it can be used on a small portion of our App it doesn't come with all the inbuilt bundles, we can use it as we want in individual parts.
 
+Does Render replace already execisting HTML inside the selected?
+Yes render function replaces
