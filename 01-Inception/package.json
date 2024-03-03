@@ -1,0 +1,25 @@
+{
+  "name": "01-inception",
+  "version": "1.0.0",
+  "description": "This is namstey React by akshay saini",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiranPolaki/Namstey-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "sai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KiranPolaki/Namstey-react/issues"
+  },
+  "homepage": "https://github.com/KiranPolaki/Namstey-react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
