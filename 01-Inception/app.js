@@ -33,3 +33,8 @@ const DYI = React.createElement("div", { id: "parent" }, [
 ]);
 const root3 = ReactDOM.createRoot(document.getElementById("root"));
 root3.render(DYI);
+
+// Parcel is a dev Dependency which we only want for development and testing
+// so to install dev dependencies we use -D while installing
+
+// React is a Dependency which is required for running of the app properly
