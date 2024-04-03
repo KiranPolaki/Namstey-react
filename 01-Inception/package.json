@@ -2,9 +2,8 @@
   "name": "01-inception",
   "version": "1.0.0",
   "description": "This is namstey React by akshay saini",
-  "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,11 @@
   },
   "homepage": "https://github.com/KiranPolaki/Namstey-react#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

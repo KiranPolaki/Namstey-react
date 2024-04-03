@@ -11,15 +11,19 @@
       <p>let's see if this gets replaced or not9ikl/p></p>
     </div>
 
-    <script
+    <!-- not prefered cause we cant change the verions in links everytime so its better to have it in node modules -->
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
+    ></script> -->
 
-    <script src="./app.js"></script>
+    <!-- Normal browser scripts cant allow imports so we cant import and export from this-->
+    <!-- <script src="./app.js"></script> -->
+    <!-- We have to use the type in the script attribute to do so -->
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
