@@ -43,9 +43,11 @@ root3.render(DYI);
 
 // React is a Dependency which is required for running of the app properly
 
-// * JSX is converted to react elements by babbel(js Lib)
+// * JSX is converted to react elements by babel(js Lib)
 
 // * JSX is not html with Js it is HTML like syntax only
+
+// ! Read more about JSX tags
 
 const head = (
   <h1 id="head" tabIndex="5">
@@ -56,3 +58,15 @@ const head = (
 root3 = ReactDOM.createRoot(document.getElementById("root"));
 
 root3.render(head);
+
+// * JSX (transpiled before it reached the JS Engine) - Parcel
+// * Parcel give the transpile job to - Babel
+
+// * React Components
+// * -> Class based Components
+// * -> Functional Components
+
+// * Functional Components
+function HeadingContainer() {
+  return <h1>Returns a JSX</h1>;
+}
