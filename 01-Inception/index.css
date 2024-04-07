@@ -28,9 +28,18 @@
 }
 
 .res-card {
-  width: 200px;
-  height: 300px;
+  width: 220px;
   border: 1px solid black;
+}
+
+.res-card img {
+  border: 1px solid #ccc;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  background-size: cover;
+  background-position: center center;
 }
 
 .search {
