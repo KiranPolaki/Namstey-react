@@ -25,7 +25,15 @@ function Header() {
 function ResCard() {
   return (
     <div className="res-card">
+      <img
+        className="res-logo"
+        src="https://t3.ftcdn.net/jpg/01/96/80/24/360_F_196802485_VQxk0qmyPGTq56rKYXGikVGApD3A7v5T.jpg"
+        alt="res-logo"
+      />
       <h3>Meghana Foods</h3>
+      <h4>Biryani, North Indian</h4>
+      <h4>4.5 stars</h4>
+      <h4>38 mins</h4>
     </div>
   );
 }
@@ -35,6 +43,16 @@ function Body() {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
+        <ResCard />
+        <ResCard />
+        <ResCard />
+        <ResCard />
+        <ResCard />
+        <ResCard />
+        <ResCard />
+        <ResCard />
+        <ResCard />
+        <ResCard />
         <ResCard />
       </div>
     </div>

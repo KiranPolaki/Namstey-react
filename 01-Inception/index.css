@@ -36,3 +36,15 @@
 .search {
   padding: 10px;
 }
+
+.res-logo {
+  width: 195px;
+  padding: 5px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}
