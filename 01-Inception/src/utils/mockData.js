@@ -1,6 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
 const resList = [
   {
     info: {
@@ -550,66 +547,4 @@ const resList = [
   },
 ];
 
-function Header() {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://cdn.dribbble.com/users/1635051/screenshots/4291569/socio_curry_logo-01.png"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-}
-
-function ResCard({ resData }) {
-  const { name, cuisines, avgRating, sla, cloudinaryImageId } = resData?.info;
-
-  return (
-    <div className="res-card">
-      <img
-        className="res-logo"
-        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
-        alt="res-logo"
-      />
-      <h3>{name}</h3>
-      <h4>{`${cuisines[0]}${cuisines[1]}`}</h4>
-      <h4>{avgRating}</h4>
-      <h3>{`${sla.deliveryTime} mins`}</h3>
-    </div>
-  );
-}
-
-function Body() {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {resList.map((res) => {
-          return <ResCard resData={res} />;
-        })}
-      </div>
-    </div>
-  );
-}
-
-function AppLayout() {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-}
-
-let root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export { resList };
