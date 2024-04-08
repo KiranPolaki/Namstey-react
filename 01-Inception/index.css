@@ -42,8 +42,9 @@
   background-position: center center;
 }
 
-.search {
-  padding: 10px;
+.filter-btn {
+  padding: 5px;
+  cursor: pointer;
 }
 
 .res-logo {
