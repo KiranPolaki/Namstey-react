@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//Single Element Creation
+// * Single Element Creation
 const heading = React.createElement(
   "h1",
   { id: "heading" },
@@ -11,7 +11,7 @@ const heading = React.createElement(
 // console.log(heading);
 // console.log(root);
 
-///Multiple Element creation
+/// * Multiple Element creation
 const multiple = React.createElement(
   "div",
   { id: "parent" },
@@ -23,7 +23,7 @@ const multiple = React.createElement(
 // const root2 = ReactDOM.createRoot(document.getElementById("root"));
 // root2.render(multiple);
 
-// Do it Yourself
+// * Do it Yourself
 const DYI = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "I am H1"),
