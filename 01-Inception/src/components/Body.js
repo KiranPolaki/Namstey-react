@@ -38,11 +38,9 @@ export function Body() {
   //   });
   // }
 
-  if (listOfResto.length === 0) {
-    return <Shimmer />;
-  }
-
-  return (
+  return listOfResto.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button className="filter-btn" onClick={applyFilter}>
