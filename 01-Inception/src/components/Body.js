@@ -19,24 +19,25 @@ export function Body() {
     setListOfResto(filteredList);
   }
 
-  // useEffect(() => {
-  //   fetchSwiggy();
-  // }, []);
-  // async function fetchSwiggy() {
-  //   const response = await fetch(
-  //     "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4360623&lng=78.3689349&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-  //   );
+  useEffect(() => {
+    fetchSwiggy();
+  }, []);
+  async function fetchSwiggy() {
+    const response = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4360623&lng=78.3689349&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
 
-  //   const json = await response.json();
+    const json = await response.json();
 
-  //   console.log(json, "json");
-  //   console.log(json.data, "json data ");
-  //   setJsonData(json.data);
+    console.log(json.data.cards?.[2]?.card?.card?.gridElements, "card");
 
-  //   jsonData.map((j) => {
-  //     console.lobg(j);
-  //   });
-  // }
+    // console.log(json.data, "json data ");
+    // setJsonData(json.data);
+
+    // jsonData.map((j) => {
+    //   console.lobg(j);
+    // });
+  }
 
   return listOfResto.length === 0 ? (
     <Shimmer />
