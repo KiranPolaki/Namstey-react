@@ -14,6 +14,8 @@ export function Body() {
     setListOfResto(filteredList);
   }
 
+  //changes are not applied to the main branch
+
   return (
     <div className="body">
       <div className="filter">
