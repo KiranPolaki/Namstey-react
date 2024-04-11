@@ -58,3 +58,15 @@
   padding: 10px;
   gap: 10px;
 }
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer {
+  margin: 20px;
+  width: 200px;
+  height: 350px;
+  background-color: lightgray;
+}
