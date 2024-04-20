@@ -42,7 +42,8 @@
   background-position: center center;
 }
 
-.filter-btn {
+.filter-btn,
+.search-btn {
   padding: 5px;
   cursor: pointer;
 }
@@ -69,4 +70,9 @@
   width: 200px;
   height: 350px;
   background-color: lightgray;
+}
+
+.filter {
+  display: flex;
+  gap: 10px;
 }

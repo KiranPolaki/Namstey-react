@@ -8,8 +8,9 @@ let index = 0;
 const testList = [];
 
 export function Body() {
-  const [listOfResto, setListOfResto] = useState(resList);
   // const [listOfResto, setListOfResto] = useState(testList);
+  const [listOfResto, setListOfResto] = useState(resList);
+  const [searchText, setSearchText] = useState("");
   const [jsonData, setJsonData] = useState();
 
   function applyFilter() {
@@ -44,6 +45,15 @@ export function Body() {
   ) : (
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input
+            type="text"
+            className="search-box"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+          <button className="search-btn">search</button>
+        </div>
         <button className="filter-btn" onClick={applyFilter}>
           Top Rated restaurants
         </button>
