@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { LOGO_URL } from "../utils/config.js";
 function Header() {
-  const [loginBtn, setLoginButton] = useState("Login");
+  const [loginBtn, setLoginButton] = useState(true);
 
   console.log("Header Rendered");
   return (
@@ -18,10 +18,10 @@ function Header() {
           <button
             className="login-btn"
             onClick={() => {
-              setLoginButton("Logout");
+              setLoginButton(!loginBtn);
             }}
           >
-            Login
+            {loginBtn ? "Login" : "Logout"}
           </button>
         </ul>
       </div>
