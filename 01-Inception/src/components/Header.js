@@ -13,10 +13,19 @@ function Header() {
       </div>
       <div className="nav-items">
         <ul>
-          <Link to="/">Home</Link>
-          <Link to="/aboutus">About Us</Link>
-          <Link to="/contactus">Contact us</Link>
-          <Link>Cart</Link>
+          {/* client side routing */}
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="/contactus">Contact us</Link>
+          </li>
+          <li>
+            <Link>Cart</Link>
+          </li>
           <button
             className="login-btn"
             onClick={() => {

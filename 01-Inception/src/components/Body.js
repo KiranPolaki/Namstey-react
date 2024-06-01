@@ -5,7 +5,7 @@ import { Shimmer } from "./ShimmerUi.js";
 
 let index = 0;
 
-export function Body() {
+function Body() {
   const [listOfResto, setListOfResto] = useState([]);
 
   const [filteredResto, setFilteredResto] = useState([]);
@@ -84,5 +84,5 @@ export function Body() {
   );
 }
 
-export default Body;
+export { Body };
 // ! We can do both the named export and default export it will work
